@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>hotel_douala</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link  rel="stylesheet" href="./css/style.css">
+</head>
+
+<body id="myPage" >
+
+  <!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+  <a href="#" class="w3-bar-item w3-button">Link 5</a>
+</nav>
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar-w3-theme-d2  w3-left-align"> 
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button "><img src="./css/img/douala.jpeg" width="80"></i></a>
+  <a href="accueil.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Accueil</a>
+  <a href="reservation.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Reservation</a>
+  <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+  <a href="#Abonement" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Abonement</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Autre service <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="#" class="w3-bar-item w3-button">Restaurant</a>
+      <a href="#" class="w3-bar-item w3-button">Snack Bar</a>
+      <a href="#" class="w3-bar-item w3-button">finesse</a>
+    </div>
+  </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red" title="Search"><i class="fa fa-search"></i></a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#accueil.html" class="w3-bar-item w3-button">Accueil</a>
+    <a href="#reservation.html" class="w3-bar-item w3-button">Reservation</a>
+    <a href="#about.html" class="w3-bar-item w3-button">About</a>
+    <a href="#abonement.html" class="w3-bar-item w3-button">Abonement</a>
+    <a href="#contact.html" class="w3-bar-item w3-button">Contact</a>
+    <a href="#" class="w3-bar-item w3-button">Search</a>
+  </div>
+</div>
+
+  <!-- Header -->
+  <header class="w3-display-container w3-content" style="max-width:1500px; max-height: 900px;">
+    <img class="w3-image" src="./css/img/plage.jpg" alt="Hotel" style="min-width:1000px" width="1500" height="800">
+    <div class="w3-display-left w3-padding w3-col l6 m8">
+      <div class="w3-container-logo">
+        <h2><img src="./css/img/douala.jpeg" width="80">  Reservation </h2>
+      </div>
+      <div class="w3-container w3-white w3-padding-16">
+        <form action="action_page.php" method="POST">
+
+          <div class="w3-row-padding" style="margin:8px -16px;">
+            <div class="w3-half w3-margin-bottom">
+              <label>Nom</label>
+              <input class="w3-input w3-border" type="text" name="nom" min="1" max="6">
+            </div>
+            <div class="w3-half w3-margin-bottom">
+                          <label>Prénom</label>
+                          <input class="w3-input w3-border" type="text" name="prenom" min="1" max="6">
+                        </div>
+            
+              <div class="w3-half ">
+                <label>Téléphone</label>
+                <input class="w3-input w3-border" type="number"  name="telephone">
+              </div>
+
+              <div class="w3-half ">
+                <label>Email</label>
+                <input class="w3-input w3-border" type="email"  name="email">
+              </div>
+
+          <div class="w3-row-padding" style="margin:0 -16px;">
+            <div class="w3-half w3-margin-bottom">
+              <label><i class="fa fa-calendar-o"></i> Date entré</label>
+              <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY" name="entre" required>
+            </div>
+            <div class="w3-half">
+              <label><i class="fa fa-calendar-o"></i> Date sortie</label>
+              <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY" name="sortie" required>
+            </div>
+          </div>
+          <div class="w3-row-padding" style="margin:8px -16px;">
+            <div class="w3-half w3-margin-bottom">
+              <label><i class="fa fa-male"></i> Adultes</label>
+              <input class="w3-input w3-border" type="number" value="1" name="adultes" min="1" max="6">
+            </div>
+            <div class="w3-half">
+              <label><i class="fa fa-child"></i> Enfants</label>
+            <input class="w3-input w3-border" type="number" value="0" name="enfants" min="0" max="6">
+            </div>
+            <div class="w3-half ">
+              <label><i class="fa fa-bed "></i> Type de Chambre</label>
+            <select class="w3-input w3-border" name="chambre" min="0" max="3">
+              <option value="null">Choisir sa chambre...</option>
+              <option value="chambre classic">Chambre classic</option>
+              <option value="Chambre VIP">Chambre VIP</option>
+              <option value="Suite">Suite</option>
+              </select>
+            </div>
+              <div class="w3-large">
+                <label>Message</label>
+                <textarea class="w3-input w3-border w3-row-padding" type="text" name="message"></textarea>
+            </div>
+
+            
+          </div>
+
+          <button class="w3-button w3-red" type="submit"><i class="fa fa-search w3-margin-right"></i> Search availability</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page content -->
+  <div class="w3-content" style="max-width:1532px;">
+
+    <div class="w3-container w3-margin-top" id="rooms">
+      <h3>chambre</h3>
+      <p> choisicez une chambre à votre convenance et à votre goût. nos meilleurs offres à votre disposition . Sleep well and rest well.</p>
+    </div>
+    
+
+  
+    <div class="w3-row-padding w3-padding-16">
+      <div class="w3-third w3-margin-bottom">
+        <img src="/w3images/room_single.jpg" alt="Norway" style="width:100%">
+        <div class="w3-container w3-white">
+          <h3>Chambre Classic</h3>
+          <h5> Type 1</h5>
+          <h6 class="w3-opacity">à 90$</h6>
+          <p>Single bed</p>
+          <p>15m<sup>2</sup></p>
+          <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i></p>
+          <button class="w3-button w3-block w3-red w3-margin-bottom">Visitez</button>
+        </div>
+      </div>
+      <div class="w3-third w3-margin-bottom">
+        <img src="/w3images/room_double.jpg" alt="Norway" style="width:100%">
+        <div class="w3-container w3-white">
+          <h3>Chambre VIP</h3>
+          <h5> Type 2</h5>
+          <h6 class="w3-opacity">From $149</h6>
+          <p>Queen-size bed</p>
+          <p>25m<sup>2</sup></p>
+          <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
+          <button class="w3-button w3-block w3-red w3-margin-bottom">Visitez</button>
+        </div>
+      </div>
+      <div class="w3-third w3-margin-bottom">
+        <img src="/w3images/room_deluxe.jpg" alt="Norway" style="width:100%">
+        <div class="w3-container w3-white">
+          <h3>Suite</h3>
+          <h5> Type 3</h5>
+          <h6 class="w3-opacity">From $199</h6>
+          <p>King-size bed</p>
+          <p>40m<sup>2</sup></p>
+          <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i> <i class="fa fa-glass"></i> <i class="fa fa-cutlery"></i></p>
+          <button class="w3-button w3-block w3-red w3-margin-bottom">Visitez</button>
+        </div>
+      </div>
+    </div>
+  
+    <div class="w3-row-padding" id="about">
+      <div class="w3-col l4 12">
+        <h3>About</h3>
+        <h6>Our hotel is one of a kind. It is truely amazing. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h6>
+      <p>We accept: <i class="fa fa-credit-card w3-large"></i> <i class="fa fa-cc-mastercard w3-large"></i> <i class="fa fa-cc-amex w3-large"></i> <i class="fa fa-cc-cc-visa w3-large"></i><i class="fa fa-cc-paypal w3-large"></i></p>
+      </div>
+      <div class="w3-col l8 12">
+        <!-- Image of location/map -->
+        <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;">
+      </div>
+    </div>
+    
+    <div class="w3-row-padding w3-large w3-center" style="margin:32px 0">
+      <div class="w3-third"><i class="fa fa-map-marker w3-text-red"></i> 423 Some adr, Chicago, US</div>
+      <div class="w3-third"><i class="fa fa-phone w3-text-red"></i> Phone: +00 151515</div>
+      <div class="w3-third"><i class="fa fa-envelope w3-text-red"></i> Email: mail@mail.com</div>
+    </div>
+  
+    <div class="w3-panel w3-red w3-leftbar w3-padding-32">
+      <h6><i class="fa fa-info w3-deep-orange w3-padding w3-margin-right"></i> On demand, we can offer playstation, babycall, children care, dog equipment, etc.</h6>
+    </div>
+  
+    <div class="w3-container">
+      <h3>Our Hotels</h3>
+      <h6>You can find our hotels anywhere in the world:</h6>
+    </div>
+    
+    <div class="w3-row-padding w3-padding-16 w3-text-white w3-large">
+      <div class="w3-half w3-margin-bottom">
+        <div class="w3-display-container">
+          <img src="/w3images/cinqueterre.jpg" alt="Cinque Terre" style="width:100%">
+          <span class="w3-display-bottomleft w3-padding">Cinque Terre</span>
+        </div>
+      </div>
+      <div class="w3-half">
+        <div class="w3-row-padding" style="margin:0 -16px">
+          <div class="w3-half w3-margin-bottom">
+            <div class="w3-display-container">
+              <img src="/w3images/newyork2.jpg" alt="New York" style="width:100%">
+              <span class="w3-display-bottomleft w3-padding">New York</span>
+            </div>
+          </div>
+          <div class="w3-half w3-margin-bottom">
+            <div class="w3-display-container">
+              <img src="/w3images/sanfran.jpg" alt="San Francisco" style="width:100%">
+              <span class="w3-display-bottomleft w3-padding">San Francisco</span>
+            </div>
+          </div>
+        </div>
+        <div class="w3-row-padding" style="margin:0 -16px">
+          <div class="w3-half w3-margin-bottom">
+            <div class="w3-display-container">
+              <img src="/w3images/pisa.jpg" alt="Pisa" style="width:100%">
+              <span class="w3-display-bottomleft w3-padding">Pisa</span>
+            </div>
+          </div>
+          <div class="w3-half w3-margin-bottom">
+            <div class="w3-display-container">
+              <img src="/w3images/paris.jpg" alt="Paris" style="width:100%">
+              <span class="w3-display-bottomleft w3-padding">Paris</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="w3-container-newsletter w3-padding-32  w3-opacity w3-card w3-hover-opacity-off" style="margin:32px 0;">
+      <h2>joingnez votre adresse pour recevoir nos meilleux offres!</h2>
+      <p>join our newsletter.</p>
+      <label>E-mail</label>
+      <input class="w3-input w3-border" type="text" placeholder="Your Email address">
+      <button type="button" class="w3-button w3-red w3-margin-top">Subscribe</button>
+    </div>
+  
+    <div class="w3-container" id="contact">
+      <h2>Contact</h2>
+      <p>Pour tout autre renseignement.</p>
+      <i class="fa fa-map-marker w3-text-red" style="width:30px"></i> Douala, CMR<br>
+      <i class="fa fa-phone w3-text-red" style="width:30px"></i> Phone: +00 151515<br>
+      <i class="fa fa-envelope w3-text-red" style="width:30px"> </i> Email: mail@mail.com<br>
+      <!-- <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="name"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="phone" required name="phone"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="email"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="subject"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="message"></p>
+        <p>
+          <button class="w3-button w3-red w3-padding-large" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </p>
+      </form> -->
+    </div>
+  
+ 
+  
+
+  
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Retrouvez Nous</h4>
+  <a class="w3-button w3-large w3-red" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-red" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-large w3-red" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-button w3-large w3-red" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
+  <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  <p>Complexe La source <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">ici</a></p>
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-red w3-hide-small"> Retour Accueil </span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+
+
+  
+  <!-- Add Google Maps -->
+  <script>
+    // Script for side navigation
+    function w3_open() {
+      var x = document.getElementById("mySidebar");
+      x.style.width = "300px";
+      x.style.paddingTop = "10%";
+      x.style.display = "block";
+    }
+    
+    // Close side navigation
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+    
+    // Used to toggle the menu on smaller screens when clicking on the menu button
+    function openNav() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    </script>
+  <!--
+  To use this code on your website, get a free API key from Google.
+  Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+  -->
+ 
+
+</body>
+</html>
