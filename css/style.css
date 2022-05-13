@@ -1,16 +1,86 @@
 .w3-container-logo{
   height: 50px;
-  background-color: rgb(190, 149, 14);
-}
-.w3-container-newsletter{
-  background-color: rgb(190, 149, 14);
+
 }
 
+
 .w3-top{
-  background-color: rgb(190, 149, 14);
+  background-color: rgb(248, 248, 247);
 }
 
 .w3-large{
   padding: 0 8px;
 }
 
+
+.w3-image{
+  min-width:100%;
+
+}
+
+.img-fluid{
+  height: 300px !important;
+}
+
+.igm-card{
+  height: 300px !important;
+}
+
+/* .text{
+  text-shadow:0 0 2px #FFD100,0 0 30px #FFD100,0px 0px 5px #FFD100, 0 0 150px #FFD100;color:#FFD100;
+  background-color:#2E8ECE !important;
+} */
+
+.w3-container-fluid {
+ 
+  position: relative !important;
+}
+.w3-container-fluid .text {
+ 
+  z-index: 1 !important;
+  position: absolute !important;
+  text-align: center !important;
+  font-family: Georgia !important;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 50% !important;
+   /* text-shadow:0 0 2px #FFD100,0 0 30px #FFD100,0px 0px 5px #FFD100, 0 0 150px #FFD100;color:#FFD100;  */
+color: #fff;
+text-shadow:black 0 0 5px;
+}
+
+.text1{
+  font-size: 30px;
+  
+}
+
+.titre{
+  font-weight: bold;
+}
+
+h2{
+  font-weight: bold !important;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  width: 40px !important;
+  height: 40px !important;
+  
+}
+
+#contact{
+  margin-top: 70px !important;
+}
+
+#about{
+  margin-top: 50px !important;
+}
+
+#reservation{
+  margin-top: 50px !important;
+}
+
+#chambre{
+  margin-top: 50px !important;
+}

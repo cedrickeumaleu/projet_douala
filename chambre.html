@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>hotel_douala</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link  rel="stylesheet" href="./css/style.css">
+  <link  rel="stylesheet" href="./css/style2.css">
+  <link  rel="stylesheet" href="./css/basse.css">
+</head>
+
+<body id="myPage" >
+
+  <!-- Sidebar on click -->
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar-w3-theme-d2  w3-left-align"> 
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+        <a href="accueil.html" class="w3-bar-item w3-button "><img src="./css/img/douala.png" width="80"></i></a>
+        <a href="accueil.html" class="w3-bar-item w3-button w3-hide-small">Accueil</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small">Chambre</a>
+        <a href="about.html" class="w3-bar-item w3-button w3-hide-small">About</a>
+        <a href="reservation.html" class="w3-bar-item w3-button w3-hide-small">Reservation</a>
+        <a href="contact.html" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+        <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-button" title="Notifications">Autre service <i class="fa fa-caret-down"></i></button>     
+        <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+          <a href="#" class="w3-bar-item w3-button">Restaurant</a>
+          <a href="#" class="w3-bar-item w3-button">Snack Bar</a>
+          <a href="#" class="w3-bar-item w3-button">finesse</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+      <a href="accueil.html" class="w3-bar-item w3-button">Accueil</a>
+      <a href="#" class="w3-bar-item w3-button">Chambre</a>
+      <a href="about.html" class="w3-bar-item w3-button">About</a>
+      <a href="reservation.html" class="w3-bar-item w3-button">Reservation</a>
+      <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+
+  <div class="w3-content" style="max-width:1500px;">
+    <div class="w3-container" style="margin-top: 100;" id="chambre">
+      <h2>Nos Chambres</h2>
+      </div>
+      <div class="row">
+        <div class="col-12">
+             
+          <div class="row">
+              <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" alt="100%x280" src="./css/img/chclassic.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">Chambre classic</h4>
+                        <h6 class="w3-opacity">70€</h6>
+                        <p class="card-text">La chambre Classique, avec son nouveau décor contemporain vous propose : Air conditionné, TV écran plat, mini-bar, coffre fort, plateau de courtoisie, douche, wifi offert. Jusqu'à 2 adultes et 2 enfants. Chambres communicantes sur demande.</p>
+                        <p>15m<sup>2</sup></p>
+                        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></i></p>
+                        <button class="w3-button w3-block w3-red data-toggle="modal" data-target="#myModal" ">voir les détails</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <img class="img-fluid" alt="100%x280" src="./css/img/chvip.jpg">
+                        <div class="card-body">
+                          <h4 class="card-title">Chambre classic </h4>
+                          <h6 class="w3-opacity">70€</h6>
+                          <p class="card-text">La chambre Classique, avec son nouveau décor contemporain vous propose : Air conditionné, TV écran plat, mini-bar, coffre fort, plateau de courtoisie, douche, wifi offert. Jusqu'à 2 adultes et 2 enfants. Chambres communicantes sur demande.</p>
+                          <p>15m<sup>2</sup></p>
+                          <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
+                          <button class="w3-button w3-block w3-red ">voir les détails</button> 
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <img class="img-fluid" alt="100%x280" src="./css/img/chmvip4.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">chambre vip </h4>
+                            <h6 class="w3-opacity">120€</h6>
+                            <p class="card-text">La chambre vip, avec son nouveau décor contemportain vous propose : 1 espaces de vie, air conditionné, 1 TV écrans plats, coffre fort, douche ou baignoire, kit bien-être avec peignoirs et chaussons, Nespresso, wifi et minibar offerts.</p>
+                            <p>40m<sup>2</sup></p>
+                            <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i> <i class="fa fa-glass"></i> <i class="fa fa-cutlery"></i></p>
+                            <button class="w3-button w3-block w3-red">voir les détails</button>
+                        </div>  
+                    </div>                          
+                </div>
+                
+                <div class="col-md-3 mb-3">
+                  <div class="card">
+                      <img class="img-fluid" alt="100%x280" src="./css/img/suite5.jpg">
+                      <div class="card-body">
+                          <h4 class="card-title">Suite</h4>
+                          <h6 class="w3-opacity">200€</h6>
+                          <p class="card-text">La Suite, avec son nouveau décor contemportain vous propose : 2 espaces de vie, air conditionné, 2 TV écrans plats, coffre fort, douche ou baignoire, kit bien-être avec peignoirs et chaussons, Nespresso, wifi et minibar offerts.</p>
+                          <p>100m<sup>2</sup></p>
+                          <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i> <i class="fa fa-glass"></i> <i class="fa fa-cutlery"></i></p>
+                          <button class="w3-button w3-block w3-red">voir les détails</button>
+                      </div>   
+                  </div>
+                </div>
+
+          </div>
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <div class="card">
+                  <img class="img-fluid" alt="100%x280" src="./css/img/vip5.jpg">
+                  <div class="card-body">
+                      <h4 class="card-title">Chambre classic</h4>
+                      <h6 class="w3-opacity">70€</h6>
+                      <p class="card-text">La chambre Classique, avec son nouveau décor contemporain vous propose : Air conditionné, TV écran plat, mini-bar, coffre fort, plateau de courtoisie, douche, wifi offert. Jusqu'à 2 adultes et 2 enfants. Chambres communicantes sur demande.</p>
+                      <p>15m<sup>2</sup></p>
+                      <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
+                      <button class="w3-button w3-block w3-red ">voir les détails</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                  <div class="card">
+                      <img class="img-fluid" alt="100%x280" src="./css/img/Chambre-3-6.jpg">
+                      <div class="card-body">
+                        <h4 class="card-title">Chambre classic </h4>
+                        <h6 class="w3-opacity">70€</h6>
+                        <p class="card-text">La chambre Classique, avec son nouveau décor contemporain vous propose : Air conditionné, TV écran plat, mini-bar, coffre fort, plateau de courtoisie, douche, wifi offert. Jusqu'à 2 adultes et 2 enfants. Chambres communicantes sur demande.</p>
+                        <p>15m<sup>2</sup></p>
+                        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
+                        <button class="w3-button w3-block w3-red ">voir les détails</button> 
+                    </div>
+                  </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                  <div class="card">
+                      <img class="img-fluid" alt="100%x280" src="./css/img/chmvip3.jpg">
+                      <div class="card-body">
+                          <h4 class="card-title">chambre vip </h4>
+                          <h6 class="w3-opacity">120€</h6>
+                          <p class="card-text">La chambre vip, avec son nouveau décor contemportain vous propose : 1 espaces de vie, air conditionné, 1 TV écrans plats, coffre fort, douche ou baignoire, kit bien-être avec peignoirs et chaussons, Nespresso, wifi et minibar offerts.</p>
+                          <p>40m<sup>2</sup></p>
+                          <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i> <i class="fa fa-glass"></i> <i class="fa fa-cutlery"></i></p>
+                          <button class="w3-button w3-block w3-red">voir les détails</button>
+                      </div>  
+                  </div>                          
+              </div>
+              
+              <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" alt="100%x280" src="./css/img/suite.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">Suite</h4>
+                        <h6 class="w3-opacity">200€</h6>
+                        <p class="card-text">La Suite, avec son nouveau décor contemportain vous propose : 2 espaces de vie, air conditionné, 2 TV écrans plats, coffre fort, douche ou baignoire, kit bien-être avec peignoirs et chaussons, Nespresso, wifi et minibar offerts.</p>
+                        <p>100m<sup>2</sup></p>
+                        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i> <i class="fa fa-glass"></i> <i class="fa fa-cutlery"></i></p>
+                        <button class="w3-button w3-block w3-red">voir les détails</button>
+                    </div>   
+                </div>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <div class="card">
+                  <img class="img-fluid" alt="100%x280" src="./css/img/classic.jpg">
+                  <div class="card-body">
+                      <h4 class="card-title">Chambre classic</h4>
+                      <h6 class="w3-opacity">70€</h6>
+                      <p class="card-text">La chambre Classique, avec son nouveau décor contemporain vous propose : Air conditionné, TV écran plat, mini-bar, coffre fort, plateau de courtoisie, douche, wifi offert. Jusqu'à 2 adultes et 2 enfants. Chambres communicantes sur demande.</p>
+                      <p>15m<sup>2</sup></p>
+                      <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
+                      <button class="w3-button w3-block w3-red ">voir les détails</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                  <div class="card">
+                      <img class="img-fluid" alt="100%x280" src="./css/img/chvip.jpg">
+                      <div class="card-body">
+                        <h4 class="card-title">Chambre classic</h4>
+                        <h6 class="w3-opacity">70€</h6>
+                        <p class="card-text">La chambre Classique, avec son nouveau décor contemporain vous propose : Air conditionné, TV écran plat, mini-bar, coffre fort, plateau de courtoisie, douche, wifi offert. Jusqu'à 2 adultes et 2 enfants. Chambres communicantes sur demande.</p>
+                        <p>15m<sup>2</sup></p>
+                        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
+                        <button class="w3-button w3-block w3-red ">voir les détails</button> 
+                    </div>
+                  </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                  <div class="card">
+                      <img class="img-fluid" alt="100%x280" src="./css/img/chvip5.jpg">
+                      <div class="card-body">
+                          <h4 class="card-title">chambre vip </h4>
+                          <h6 class="w3-opacity">120€</h6>
+                          <p class="card-text">La chambre vip, avec son nouveau décor contemportain vous propose : 1 espaces de vie, air conditionné, 1 TV écrans plats, coffre fort, douche ou baignoire, kit bien-être avec peignoirs et chaussons, Nespresso, wifi et minibar offerts.</p>
+                          <p>40m<sup>2</sup></p>
+                          <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i> <i class="fa fa-glass"></i> <i class="fa fa-cutlery"></i></p>
+                          <button class="w3-button w3-block w3-red">voir les détails</button>
+                      </div>  
+                  </div>                          
+              </div>
+              
+              <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" alt="100%x280" src="./css/img/suite3.webp">
+                    <div class="card-body">
+                        <h4 class="card-title">Suite</h4>
+                        <h6 class="w3-opacity">200€</h6>
+                        <p class="card-text">La Suite, avec son nouveau décor contemportain vous propose : 2 espaces de vie, air conditionné, 2 TV écrans plats, coffre fort, douche ou baignoire, kit bien-être avec peignoirs et chaussons, Nespresso, wifi et minibar offerts.</p>
+                        <p>100m<sup>2</sup></p>
+                        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i> <i class="fa fa-glass"></i> <i class="fa fa-cutlery"></i></p>
+                        <button class="w3-button w3-block w3-red">voir les détails</button>
+                    </div>   
+                </div>
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <div class="card">
+                  <img class="img-fluid" alt="100%x280" src="./css/img/vip5.jpg">
+                  <div class="card-body">
+                      <h4 class="card-title">Chambre classic</h4>
+                      <h6 class="w3-opacity">70€</h6>
+                      <p class="card-text">La chambre Classique, avec son nouveau décor contemporain vous propose : Air conditionné, TV écran plat, mini-bar, coffre fort, plateau de courtoisie, douche, wifi offert. Jusqu'à 2 adultes et 2 enfants. Chambres communicantes sur demande.</p>
+                      <p>15m<sup>2</sup></p>
+                      <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
+                      <button class="w3-button w3-block w3-red ">voir les détails</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                  <div class="card">
+                      <img class="img-fluid" alt="100%x280" src="./css/img/chambre-3-6.jpg">
+                      <div class="card-body">
+                        <h4 class="card-title">Chambre classic </h4>
+                        <h6 class="w3-opacity">70€</h6>
+                        <p class="card-text">La chambre Classique, avec son nouveau décor contemporain vous propose : Air conditionné, TV écran plat, mini-bar, coffre fort, plateau de courtoisie, douche, wifi offert. Jusqu'à 2 adultes et 2 enfants. Chambres communicantes sur demande.</p>
+                        <p>15m<sup>2</sup></p>
+                        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
+                        <button class="w3-button w3-block w3-red ">voir les détails</button> 
+                    </div>
+                  </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                  <div class="card">
+                      <img class="img-fluid" alt="100%x280" src="./css/img/vip1.jpg">
+                      <div class="card-body">
+                          <h4 class="card-title">chambre vip </h4>
+                          <h6 class="w3-opacity">120€</h6>
+                          <p class="card-text">La chambre vip, avec son nouveau décor contemportain vous propose : 1 espaces de vie, air conditionné, 1 TV écrans plats, coffre fort, douche ou baignoire, kit bien-être avec peignoirs et chaussons, Nespresso, wifi et minibar offerts.</p>
+                          <p>40m<sup>2</sup></p>
+                          <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i> <i class="fa fa-glass"></i> <i class="fa fa-cutlery"></i></p>
+                          <button class="w3-button w3-block w3-red">voir les détails</button>
+                      </div>  
+                  </div>                          
+              </div>
+              
+              <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" alt="100%x280" src="./css/img/suite2.webp">
+                    <div class="card-body">
+                        <h4 class="card-title">Suite</h4>
+                        <h6 class="w3-opacity">200€</h6>
+                        <p class="card-text">La Suite, avec son nouveau décor contemportain vous propose : 2 espaces de vie, air conditionné, 2 TV écrans plats, coffre fort, douche ou baignoire, kit bien-être avec peignoirs et chaussons, Nespresso, wifi et minibar offerts.</p>
+                        <p>100m<sup>2</sup></p>
+                        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i> <i class="fa fa-glass"></i> <i class="fa fa-cutlery"></i></p>
+                        <button class="w3-button w3-block w3-red">voir les détails</button>
+                    </div>   
+                </div>
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <div class="card">
+                  <img class="img-fluid" alt="100%x280" src="./css/img/chclassic.jpg">
+                  <div class="card-body">
+                      <h4 class="card-title">Chambre classic</h4>
+                      <h6 class="w3-opacity">70€</h6>
+                      <p class="card-text">La chambre Classique, avec son nouveau décor contemporain vous propose : Air conditionné, TV écran plat, mini-bar, coffre fort, plateau de courtoisie, douche, wifi offert. Jusqu'à 2 adultes et 2 enfants. Chambres communicantes sur demande.</p>
+                      <p>15m<sup>2</sup></p>
+                      <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
+                      <button class="w3-button w3-block w3-red ">voir les détails</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                  <div class="card">
+                      <img class="img-fluid" alt="100%x280" src="./css/img/chvip.jpg">
+                      <div class="card-body">
+                        <h4 class="card-title">Chambre classic </h4>
+                        <h6 class="w3-opacity">70€</h6>
+                        <p class="card-text">La chambre Classique, avec son nouveau décor contemporain vous propose : Air conditionné, TV écran plat, mini-bar, coffre fort, plateau de courtoisie, douche, wifi offert. Jusqu'à 2 adultes et 2 enfants. Chambres communicantes sur demande.</p>
+                        <p>15m<sup>2</sup></p>
+                        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
+                        <button class="w3-button w3-block w3-red ">voir les détails</button> 
+                    </div>
+                  </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                  <div class="card">
+                      <img class="img-fluid" alt="100%x280" src="./css/img/vip.jpg">
+                      <div class="card-body">
+                          <h4 class="card-title">chambre vip </h4>
+                          <h6 class="w3-opacity">120€</h6>
+                          <p class="card-text">La chambre vip, avec son nouveau décor contemportain vous propose : 1 espaces de vie, air conditionné, 1 TV écrans plats, coffre fort, douche ou baignoire, kit bien-être avec peignoirs et chaussons, Nespresso, wifi et minibar offerts.</p>
+                          <p>40m<sup>2</sup></p>
+                          <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i> <i class="fa fa-glass"></i> <i class="fa fa-cutlery"></i></p>
+                          <button class="w3-button w3-block w3-red">voir les détails</button>
+                      </div>  
+                  </div>                          
+              </div>
+              
+              <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" alt="100%x280" src="./css/img/suite5.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">Suite</h4>
+                        <h6 class="w3-opacity">200€</h6>
+                        <p class="card-text">La Suite, avec son nouveau décor contemportain vous propose : 2 espaces de vie, air conditionné, 2 TV écrans plats, coffre fort, douche ou baignoire, kit bien-être avec peignoirs et chaussons, Nespresso, wifi et minibar offerts.</p>
+                        <p>100m<sup>2</sup></p>
+                        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i> <i class="fa fa-glass"></i> <i class="fa fa-cutlery"></i></p>
+                        <button class="w3-button w3-block w3-red">voir les détails</button>
+                    </div>   
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>   
+
+
+
+
+
+  
+  <!-- Add Google Maps -->
+  <script>
+    // Script for side navigation
+    function w3_open() {
+      var x = document.getElementById("mySidebar");
+      x.style.width = "300px";
+      x.style.paddingTop = "10%";
+      x.style.display = "block";
+    }
+    
+    // Close side navigation
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+    
+    // Used to toggle the menu on smaller screens when clicking on the menu button
+    function openNav() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+
+  
+    </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

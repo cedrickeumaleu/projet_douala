@@ -5,38 +5,76 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <link  rel="stylesheet" href="./css/style.css">
       </head>
 <body>
-    
-    <div class="w3-container" id="contact">
-        <h2>Contact</h2>
-        <p>Pour tout autre renseignement.</p>
-        <i class="fa fa-map-marker w3-text-red" style="width:30px"></i> Douala, CMR<br>
-        <i class="fa fa-phone w3-text-red" style="width:30px"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope w3-text-red" style="width:30px"> </i> Email: mail@mail.com<br>
-        <form action="/action_page.php" target="_blank">
-          <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="name"></p>
-          <p><input class="w3-input w3-padding-16" type="text" placeholder="phone" required name="phone"></p>
-          <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="email"></p>
-          <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="subject"></p>
-          <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="message"></p>
-          <p>
-            <button class="w3-button w3-red w3-padding-large" type="submit">
-              <i class="fa fa-paper-plane"></i> SEND MESSAGE
-            </button>
-          </p>
-        </form>
+      <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar-w3-theme-d2  w3-left-align"> 
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+        <a href="accueil.html" class="w3-bar-item w3-button "><img src="./css/img/douala.png" width="80"></i></a>
+        <a href="accueil.html" class="w3-bar-item w3-button w3-hide-small">Accueil</a>
+        <a href="chambre.html" class="w3-bar-item w3-button w3-hide-small">Chambre</a>
+        <a href="about.html" class="w3-bar-item w3-button w3-hide-small">About</a>
+        <a href="reservation.html" class="w3-bar-item w3-button w3-hide-small">Reservation</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-button" title="Notifications">Autre service <i class="fa fa-caret-down"></i></button>     
+        <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+          <a href="#" class="w3-bar-item w3-button">Restaurant</a>
+          <a href="#" class="w3-bar-item w3-button">Snack Bar</a>
+          <a href="#" class="w3-bar-item w3-button">finesse</a>
+        </div>
       </div>
+    </div>
 
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+      <a href="accueil.html" class="w3-bar-item w3-button">Accueil</a>
+      <a href="chambre.html" class="w3-bar-item w3-button">Chambre</a>
+      <a href="about.html" class="w3-bar-item w3-button">About</a>
+      <a href="reservation.html" class="w3-bar-item w3-button">Reservation</a>
+      <a href="abonement.html" class="w3-bar-item w3-button">Abonement</a>
+      <a href="#" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+
+  <div class="w3-content" style="max-width:1500px;">
+      <div class="w3-container  w3-animate-bottom" id="contact">
+        <div class="row">
+          <div class="col-3">
+            <h2>Contact</h2>
+            <p>Pour tout autre renseignement, notre service d'accueil vous repons 24h/24 7jour/7</p>
+         
+            <i class="fa fa-map-marker w3-text-red" style="width:30px"></i> Douala, CMR<br>
+            <i class="fa fa-phone w3-text-red" style="width:30px"></i> Phone:  237 742457548<br>
+            <i class="fa fa-envelope w3-text-red" style="width:30px"> </i> Email: lasouce@mail.com<br>
+          </div>
+          <div class="col-9">
+            <form action="action_contact.php" method="POST" target="_blank">
+              <p><input  class="form-control" type="text" placeholder="Name" required name="nom"></p>
+              <p><input  class="form-control" type="email" placeholder="Email" required name="email"></p>
+              <p><input  class="form-control" type="text" placeholder="Subject" required name="subject"></p>
+              <textarea class="form-control" type="text" placeholder="Message" required name="message"></textarea>
+                <button class="w3-button w3-red m-2"  type="submit">
+                  <i class="fa fa-paper-plane"></i> Envoyer
+                </button>
+              </p>
+            </form>
+          </div>
+      </div>
+      </div>
+    </div>
+
+
+     
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

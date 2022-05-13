@@ -8,7 +8,7 @@ if((isset($_POST['nom']) && !empty($_POST['Nom']))
 && (isset($_POST['date_entré']) && !empty($_POST['Date entré']))
 && (isset($_POST['date_sortie']) && !empty($_POST['Date sortie']))
 && (isset($_POST['adulte']) && !empty($_POST['Adulte']))
-&& (isset($_POST['enfants']) && !empty($_POST['Enfants']))
+&& (isset($_POST['enfant']) && !empty($_POST['Enfant']))
 && (isset($_POST['type_de_chambre']) && !empty($_POST['Type de chambre']))
 && (isset($_POST['message']) && !empty($_POST['text']))){
 
@@ -20,9 +20,11 @@ if((isset($_POST['nom']) && !empty($_POST['Nom']))
     $Date_entré = $_POST['date_entré'];
 	$Date_sortie = $_POST['date_sortie'];
     $Adulte = $_POST['adulte'];
-	$Enfants= $_POST['enfants'];
-    $Type_de_chambre =< $_POST['type_de_chambre'];
+	$Enfant= $_POST['enfant'];
+    $Type_de_chambre = $_POST['type_de_chambre'];
 	$message = $_POST['message'];
+
+	
 	
 	$to = "keumaleucedrick@gmail.com";
 	$headers = "From : " . $email;
@@ -30,9 +32,26 @@ if((isset($_POST['nom']) && !empty($_POST['Nom']))
 	if( mail($to, $subject, $message, $headers)){
 		echo "E-Mail Sent successfully, we will get back to you soon.";
 		
-		$query = "INSERT INTO `contact` (nom, prenom, téléphone, email, date_entré, date_sortie, adulte, enfants, type_de_chambre, message  ) VALUES ('$Nom', '$Prenom', '$Téléphone', '$Email', '$Date_entré', '$Date_sortie', '$Adulte', '$Enfants', '$Type_de_chambre' '$message')";
+		$query = "INSERT INTO `contact` (nom, prenom, téléphone, email, date_entré, date_sortie, adulte, enfant, type_de_chambre, message  ) VALUES ('$Nom', '$Prenom', '$Téléphone', '$Email', '$Date_entré', '$Date_sortie', '$Adulte', '$Enfant', '$Type_de_chambre' '$message')";
 		$result = mysqli_query($connection, $query);
 	}
 }
+
+// newsleter
+
+if((isset($_POST['email']) && !empty($_POST['email']))){
+
+	$Email = $_POST['email'];
+     
+	if( mail($to)){
+	echo "E-Mail Sent successfully, we will get back to you soon.";
+
+	$query = "INSERT INTO `newsletter` ( email,) VALUE ('$email',)";
+ 	$result = mysqli_query($connection, $query);
+	 
+	}
+
+}
+
 
 ?>

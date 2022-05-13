@@ -14,8 +14,8 @@ if(
     empty($_POST['email'])||
     empty($_POST['entre'])||
     empty($_POST['sortie'])||
-    empty($_POST['adultes'])||
-    empty($_POST['enfants'])||
+    // empty($_POST['adultes'])||
+    empty($_POST['enfant'])||
     empty($_POST['chambre'])||
     empty($_POST['message']))
     {
@@ -24,7 +24,7 @@ if(
 // var_dump($errors);
 // die();
 
-// on stock iciles chams du formulaire dans des variables (name...)
+// on stock ici les chams du formulaire dans des variables (name...)
 
 
 $nom = $_POST['nom'];
@@ -34,12 +34,15 @@ $email = $_POST['email'];
 $date_entre = $_POST['entre'];
 $date_sortie = $_POST['sortie'];
 $adultes = $_POST['adultes'];
-$enfants = $_POST['enfants'];
+$enfant = $_POST['enfant'];
 $type_de_chambre = $_POST['chambre'];
 $message = $_POST['message'];
 
 
-// var_dump($type_de_chambre);
+if($adultes == "0"){
+    $adultes = "Aucun";	
+}
+// var_dump($_POST);
 // die();
 
 
@@ -53,121 +56,26 @@ $message = $_POST['message'];
 //     $errors .= "\n Error: Invalid email address";
 // }
 
+// var_dump( $_POST);
+
+//var_dump( $errors);
 
  if(empty($errors))
  {
-    $query = "INSERT INTO `reservation` (nom, prenom, telephone, email, date_entre, date_sortie, adultes, enfants, type_de_chambre, message) VALUES ('$nom', '$prenom', '$telephone', '$email', '$date_entre', '$date_sortie', '$adultes', '$enfants', '$type_de_chambre', '$message')";
-    //$sql = "INSERT INTO `reservation` (Nom, Prenom, Téléphone, email, Date_entre, Date_sortie, Adulte, Enfants, Type_de_chambre, msg ) VALUES ( \'kam\', \'jojo\', \'0755612575\', \'keumaleucedrick@gmail.com\', \'01/05/2020\', \'20/05/2021\', \'2\', \'3\', \'Chambre VIP\', \'test\')";
+    $query = "INSERT INTO `reservation` (nom, prenom, telephone, email, date_entre, date_sortie, adultes, enfant, type_de_chambre, message) VALUES ('$nom', '$prenom', '$telephone', '$email', '$date_entre', '$date_sortie', '$adultes', '$enfant', '$type_de_chambre', '$message')";
+    //$sql = "INSERT INTO `reservation` (Nom, Prenom, Téléphone, email, Date_entre, Date_sortie, Adulte, Enfant, Type_de_chambre, msg ) VALUES ( \'kam\', \'jojo\', \'0755612575\', \'keumaleucedrick@gmail.com\', \'01/05/2020\', \'20/05/2021\', \'2\', \'0\', \'Chambre VIP\', \'test\')";
    
    
     $result = mysqli_query($connection, $query);
-
+   
     
+//die();
     header('Location: accueil.html');
  
- 
-  
-
 
 // 	$to = $myemail; 
 // 	$email_subject = "Contact form submission: $nom";
 // 	$email_body =  $email_body = '
-
-//     <div style="margin-top: 20px;
-//     padding: 0px;
-//     border: 0px;
-//     color: #1b1e21;
-//     background-color: #d6d8d9;
-//     margin-bottom: 1rem;
-//     border: 1px solid transparent;
-//     border-radius: .25rem;
-//     ">
-//     <h3 class="titre">Message de la part de : '.$nom.'</h3>
-// </div>
-
-// <div style="margin-top: 20px;
-// padding: 0px;
-// border: 0px;
-// color: #1b1e21;
-// background-color: #d6d8d9;
-// margin-bottom: 1rem;
-// border: 1px solid transparent;
-// border-radius: .25rem;
-// ">
-// <h3 class="titre"> : '.$prenom.'</h3>
-// </div>
-
-// <div style="margin-top: 20px;
-// padding: 0px;
-// border: 0px;
-// color: #1b1e21;
-// background-color: #d6d8d9;
-// margin-bottom: 1rem;
-// border: 1px solid transparent;
-// border-radius: .25rem;
-// ">
-// <h3 class="titre">tél : '.$téléphone.'</h3>
-// </div>
-
-// <div style="margin-top: 20px;
-// padding: 0px;
-// border: 0px;
-// color: #1b1e21;
-// background-color: #d6d8d9;
-// margin-bottom: 1rem;
-// border: 1px solid transparent;
-// border-radius: .25rem;
-// ">
-// <h3 class="titre">email : '.$email.'</h3>
-// </div>
-
-// <div style="margin-top: 20px;
-// padding: 0px;
-// border: 0px;
-// color: #1b1e21;
-// background-color: #d6d8d9;
-// margin-bottom: 1rem;
-// border: 1px solid transparent;
-// border-radius: .25rem;
-// ">
-// <h3 class="titre">nombre d_adulte : '.$adulte.'</h3>
-// </div>
-
-// <div style="margin-top: 20px;
-// padding: 0px;
-// border: 0px;
-// color: #1b1e21;
-// background-color: #17a2b8;
-// margin-bottom: 1rem;
-// border: 1px solid transparent;
-// border-radius: .25rem;
-// ">
-// <h3 class="titre"> nombre d_enfants : '.$enfants .' </h3>
-// </div>
-
-// <div style="margin-top: 20px;
-// padding: 0px;
-// border: 0px;
-// color: #1b1e21;
-// background-color: #ccc;
-// margin-bottom: 1rem;
-// border: 1px solid transparent;
-// border-radius: .25rem;
-// ">
-// <h3 class="titre">type de chambre : '.$type_de_chambre .'</h3>
-// </div>
-
-// <div style="margin-top: 20px;
-// padding: 0px;
-// border: 0px;
-// color: #1b1e21;
-// background-color: #ccc;
-// margin-bottom: 1rem;
-// border: 1px solid transparent;
-// border-radius: .25rem;
-// ">
-// <h3 class="titre"> '.$message .'</h3>
-// </div>
 
 
     
